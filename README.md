@@ -29,3 +29,40 @@ Repo Gallery App is a Flutter application that displays a list of public GitHub 
    ```bash
    git clone https://github.com/your-username/repo_gallery_app.git
    cd repo_gallery_app
+
+2. Install dependencies:
+   ```bash
+   flutter pub get
+
+3. Set up Unsplash API:
+   ```bash
+   flutter run
+
+## Folder Structure
+- lib/screens: Contains all screens like `splash_screen.dart`, `home_screen.dart`, `repo_list.dart` etc.
+- lib/widgets: Contains reusable widgets.
+- lib/utils: Contains utility files for caching, network calls, etc.
+
+## API Usage
+1. GitHub API: Fetches a list of public repositories.
+   URL: `https://api.github.com/gists/public'
+2. Unsplash API: Fetches images for the gallery view.
+   URL: `https://api.unsplash.com/photos?client_id=YOUR_ACCESS_KEY`
+
+## Dependencies
+  - `http`: For API calls.
+  - `cached_network_image`: For image caching.
+  - `shared_preferences`: For storing cached data and bookmarks.
+  - `flutter_staggered_grid_view`: For displaying bookmarks in a staggered grid.
+  - `zoom_pinch_overlay`: For enabling zoom functionality on images.
+  - `provider`: For state management across the app.
+
+## Contributing
+1. Fork the repository.
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`).
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`).
+4. Push to the branch (`git push origin feature/AmazingFeature`).
+5. Open a pull request.
+
+## License
+This project is licensed under the MIT License.
